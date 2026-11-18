@@ -1,0 +1,141 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap');
+
+:root {
+  --primary-green: #143826;
+  --dark-green: #0D261A;
+  --light-green: #1E4D36;
+  --accent-yellow: #F5A623;
+  --accent-yellow-light: #FFDF00;
+  --accent-amber: #EAA92A;
+  --cream-bg: #FCFCF9;
+  --text-dark: #121820;
+  --text-muted: #5A6578;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: var(--cream-bg);
+  color: var(--text-dark);
+  overflow-x: hidden;
+}
+
+/* Custom Cursive Font for Signature */
+.font-signature {
+  font-family: 'Caveat', cursive;
+}
+
+/* Rotating Stamp Badge */
+@keyframes spinBadge {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spinBadge 12s linear infinite;
+}
+
+/* Floating animation for pills */
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes floatAlt {
+  0%, 100% {
+    transform: translateY(0px) rotate(1deg);
+  }
+  50% {
+    transform: translateY(8px) rotate(-1deg);
+  }
+}
+
+.animate-float {
+  animation: floatSlow 4s ease-in-out infinite;
+}
+
+.animate-float-alt {
+  animation: floatAlt 4.5s ease-in-out infinite;
+}
+
+/* Marquee ticker animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 25s linear infinite;
+}
+
+.marquee-container:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+/* Organic backdrop curve shape */
+.hero-blob-bg {
+  border-radius: 62% 38% 70% 30% / 45% 58% 42% 55%;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #143826;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #F5A623;
+}
+
+/* Custom transitions and glassmorphism */
+.glass-nav {
+  background: rgba(20, 56, 38, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.service-card {
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 35px -10px rgba(20, 56, 38, 0.12);
+}
+
+.project-card {
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+/* Modal styling */
+dialog::backdrop {
+  background: rgba(13, 38, 26, 0.65);
+  backdrop-filter: blur(6px);
+}

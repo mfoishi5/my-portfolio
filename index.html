@@ -1,0 +1,1367 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Myesha Farjana Oishi · Product & UI/UX Designer</title>
+  <meta name="description" content="Portfolio of Myesha Farjana Oishi - UI/UX Designer & Product Designer based in Rajpara, Rajshahi, Bangladesh. Specializing in mobile apps, web design, design systems, and Gemini AI integration.">
+  <meta name="keywords" content="Myesha Farjana Oishi, UI UX Designer, Product Designer, Portfolio, Figma, Mobile App Design, Web Design, Rajshahi, Bangladesh, Gemini AI">
+  <meta name="author" content="Myesha Farjana Oishi">
+
+  <!-- Open Graph / Meta for Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Myesha Farjana Oishi · Product & UI/UX Designer">
+  <meta property="og:description" content="Passionate UI/UX & Product Designer crafting intuitive, user-centered digital experiences.">
+  <meta property="og:image" content="assets/images/myesha-avatar.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%23143826'/><circle cx='50' cy='50' r='40' fill='%23F5A623'/><text x='50' y='65' font-size='42' font-family='sans-serif' font-weight='bold' text-anchor='middle' fill='%23143826'>O</text></svg>">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandGreen: {
+              DEFAULT: '#143826',
+              dark: '#0D261A',
+              light: '#1B4D35',
+              surface: '#0F2D1F',
+            },
+            brandYellow: {
+              DEFAULT: '#F5A623',
+              dark: '#D98200',
+              light: '#FFB84D',
+              amber: '#EAA92A',
+            },
+            cream: '#FCFCF9',
+          },
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            signature: ['Caveat', 'cursive'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts & Lucide Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-cream text-gray-900 antialiased selection:bg-brandYellow selection:text-brandGreen-dark">
+
+  <!-- ========================
+       TOP FLOATING CAPSULE NAVBAR 
+       ======================== -->
+  <header class="fixed top-5 inset-x-0 z-50 flex justify-center px-4">
+    <nav class="w-full max-w-5xl bg-brandGreen/95 backdrop-blur-md rounded-full px-5 py-3 md:py-3.5 flex items-center justify-between shadow-2xl border border-white/10 transition-all duration-300">
+      
+      <!-- Brand Logo -->
+      <a href="#home" class="flex items-center gap-2.5 group">
+        <span class="w-9 h-9 rounded-full bg-brandYellow flex items-center justify-center text-brandGreen font-extrabold text-base shadow-md group-hover:scale-105 transition-transform">
+          O
+        </span>
+        <span class="text-white font-bold text-xl tracking-tight">Oishi<span class="text-brandYellow">.</span></span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <div class="hidden md:flex items-center gap-7 text-sm font-medium text-white/90">
+        <a href="#home" class="hover:text-brandYellow transition-colors">Home</a>
+        <a href="#services" class="hover:text-brandYellow transition-colors">Services</a>
+        <a href="#about" class="hover:text-brandYellow transition-colors">About</a>
+        <a href="#projects" class="hover:text-brandYellow transition-colors">Projects</a>
+        <a href="#tools" class="hover:text-brandYellow transition-colors">Tools</a>
+        <a href="#ai-assistant" class="flex items-center gap-1.5 text-brandYellow hover:text-white transition-colors">
+          <i data-lucide="sparkles" class="w-3.5 h-3.5 animate-pulse"></i> Gemini AI
+        </a>
+      </div>
+
+      <!-- Right Action & Mobile Toggle -->
+      <div class="flex items-center gap-3">
+        <a href="#contact" class="hidden sm:inline-flex items-center justify-center px-6 py-2 rounded-full text-xs md:text-sm font-semibold bg-white text-brandGreen hover:bg-brandYellow hover:text-brandGreen-dark shadow transition-all duration-300 hover:scale-105">
+          Contact Me
+        </a>
+        <button id="mobile-menu-btn" aria-label="Toggle Navigation Menu" class="md:hidden text-white p-2 rounded-lg hover:bg-white/10 focus:outline-none">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Dropdown Menu -->
+  <div id="mobile-menu" class="fixed inset-x-4 top-20 z-40 bg-brandGreen rounded-3xl p-6 shadow-2xl border border-white/10 hidden md:hidden flex flex-col gap-4 text-center text-white font-medium text-base">
+    <a href="#home" class="mobile-nav-link py-2 hover:text-brandYellow transition-colors">Home</a>
+    <a href="#services" class="mobile-nav-link py-2 hover:text-brandYellow transition-colors">Services</a>
+    <a href="#about" class="mobile-nav-link py-2 hover:text-brandYellow transition-colors">About</a>
+    <a href="#projects" class="mobile-nav-link py-2 hover:text-brandYellow transition-colors">Projects</a>
+    <a href="#tools" class="mobile-nav-link py-2 hover:text-brandYellow transition-colors">Tools</a>
+    <a href="#ai-assistant" class="mobile-nav-link py-2 text-brandYellow flex items-center justify-center gap-2">
+      <i data-lucide="sparkles" class="w-4 h-4"></i> Gemini AI Assistant
+    </a>
+    <a href="#contact" class="mobile-nav-link py-3 mt-2 rounded-full bg-brandYellow text-brandGreen-dark font-bold">
+      Contact Me
+    </a>
+  </div>
+
+  <!-- ========================
+       HERO SECTION 
+       ======================== -->
+  <section id="home" class="relative pt-32 md:pt-40 pb-16 md:pb-24 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        
+        <!-- Left Hero Content (7 Cols) -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          
+          <!-- Hello There Bracket Badge -->
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded text-xs font-semibold tracking-wider uppercase text-gray-700 bg-amber-50 border border-amber-200 relative">
+            <span class="text-brandYellow font-mono text-sm">[</span>
+            <span>Hello There!</span>
+            <span class="text-brandYellow font-mono text-sm">]</span>
+          </div>
+
+          <!-- Hero Main Title -->
+          <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 tracking-tight leading-[1.12]">
+            I'm <span class="text-brandYellow underline decoration-brandYellow/40 decoration-wavy decoration-2">Myesha Farjana</span>,<br>
+            Product Designer<br>
+            <span class="text-gray-800">Based in Bangladesh.</span>
+          </h1>
+
+          <!-- Hero Subtitle -->
+          <p class="text-base sm:text-lg text-gray-600 max-w-xl mx-auto lg:mx-0 leading-relaxed font-normal">
+            I'm an experienced UI/UX & Product Designer crafting intuitive, human-centered digital experiences, modern mobile apps, and scalable design systems for startups and global innovators.
+          </p>
+
+          <!-- CTA Buttons -->
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
+            
+            <!-- View My Portfolio Button -->
+            <a href="#projects" class="inline-flex items-center gap-3 px-6 py-3.5 rounded-full bg-brandGreen text-white font-semibold text-sm sm:text-base shadow-xl hover:bg-brandGreen-light transition-all duration-300 hover:scale-105 group">
+              <span>View My Portfolio</span>
+              <span class="w-7 h-7 rounded-full bg-brandYellow text-brandGreen flex items-center justify-center group-hover:translate-x-0.5 transition-transform">
+                <i data-lucide="play" class="w-3.5 h-3.5 fill-current"></i>
+              </span>
+            </a>
+
+            <!-- Hire Me Button -->
+            <a href="#contact" class="inline-flex items-center justify-center px-7 py-3.5 rounded-full border-2 border-gray-900 text-gray-900 font-semibold text-sm sm:text-base hover:bg-gray-900 hover:text-white transition-all duration-300 hover:scale-105">
+              Hire Me
+            </a>
+          </div>
+
+          <!-- Quick Metrics Bar / Trust Indicators -->
+          <div class="pt-6 border-t border-gray-200 flex flex-wrap items-center justify-center lg:justify-start gap-6 sm:gap-10 text-xs sm:text-sm text-gray-600">
+            <div class="flex items-center gap-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-ping"></span>
+              <span class="font-medium text-gray-800">Available for Freelance & Full-time</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i data-lucide="map-pin" class="w-4 h-4 text-brandYellow"></i>
+              <span>Rajpara, Rajshahi, BD</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Hero Image & Badges (5 Cols) -->
+        <div class="lg:col-span-5 flex justify-center relative">
+          <div class="relative w-full max-w-md sm:max-w-lg lg:max-w-none flex justify-center items-center">
+            
+            <!-- Background Golden Organic Shape -->
+            <div class="absolute w-72 h-72 sm:w-88 sm:h-88 md:w-96 md:h-96 bg-brandYellow/90 rounded-full blur-none -z-10 translate-x-4 -translate-y-2 hero-blob-bg shadow-xl"></div>
+            
+            <!-- Subtle Ambient Glow -->
+            <div class="absolute w-80 h-80 bg-brandYellow/30 rounded-full blur-3xl -z-20"></div>
+
+            <!-- Main Portrait Photo -->
+            <div class="relative z-10 w-72 sm:w-80 md:w-96 overflow-hidden rounded-b-[60px] rounded-t-[140px] border-4 border-white shadow-2xl bg-white">
+              <img 
+                src="assets/images/myesha-hero.jpg" 
+                alt="Myesha Farjana Oishi - UI/UX Designer" 
+                class="w-full h-auto object-cover object-top hover:scale-105 transition-transform duration-700 ease-out"
+                loading="eager"
+              >
+            </div>
+
+            <!-- Rotating Circular "HIRE ME" Stamp Badge -->
+            <div class="absolute -top-3 -right-2 sm:right-2 z-20 w-24 h-24 sm:w-28 sm:h-28 bg-brandGreen rounded-full shadow-2xl flex items-center justify-center text-white border-2 border-white">
+              <svg class="w-full h-full animate-spin-slow p-1" viewBox="0 0 100 100">
+                <path id="circlePath" fill="none" stroke="none" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" />
+                <text class="text-[9.5px] font-bold uppercase tracking-[2.6px] fill-brandYellow">
+                  <textPath xlink:href="#circlePath">
+                    • HIRE ME • HIRE ME • HIRE ME
+                  </textPath>
+                </text>
+              </svg>
+              <!-- Center Star Icon -->
+              <div class="absolute w-7 h-7 rounded-full bg-brandYellow text-brandGreen flex items-center justify-center shadow">
+                <i data-lucide="sparkle" class="w-4 h-4 fill-current"></i>
+              </div>
+            </div>
+
+            <!-- Floating Pill Badge 1: UI/UX Designer -->
+            <div class="absolute bottom-16 -right-2 sm:right-2 z-20 px-4 py-2 rounded-full bg-brandYellow text-brandGreen-dark font-bold text-xs sm:text-sm shadow-xl flex items-center gap-2 border-2 border-white animate-float">
+              <i data-lucide="palette" class="w-4 h-4 text-brandGreen"></i>
+              <span>UI/UX Designer</span>
+            </div>
+
+            <!-- Floating Pill Badge 2: Product Designer -->
+            <div class="absolute bottom-2 -left-2 sm:left-4 z-20 px-4 py-2 rounded-full bg-brandGreen text-white font-bold text-xs sm:text-sm shadow-xl flex items-center gap-2 border-2 border-white animate-float-alt">
+              <i data-lucide="layers" class="w-4 h-4 text-brandYellow"></i>
+              <span>Product Designer</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================
+       YELLOW MARQUEE TICKER 
+       ======================== -->
+  <section class="w-full bg-brandYellow py-3.5 overflow-hidden shadow-inner marquee-container border-y border-amber-500/20">
+    <div class="marquee-track flex items-center gap-8 text-brandGreen-dark font-extrabold text-sm sm:text-base tracking-wider uppercase">
+      <span>App Design</span>
+      <span class="text-brandGreen text-xl">✳</span>
+      <span>Website Design</span>
+      <span class="text-brandGreen text-xl">✳</span>
+      <span>Dashboard & SaaS</span>
+      <span class="text-brandGreen text-xl">✳</span>
+      <span>Wireframing</span>
+      <span class="text-brandGreen text-xl">✳</span>
+      <span>UI/UX Research</span>
+      <span class="text-brandGreen text-xl">✳</span>
+      <span>Prototyping</span>
+      <span class="text-brandGreen text-xl">✳</span>
+      <span>Design Systems</span>
+      <span class="text-brandGreen text-xl">✳</span>
+      <span>Gemini AI Integration</span>
+      <span class="text-brandGreen text-xl">✳</span>
+      <span>User Journey Mapping</span>
+      <span class="text-brandGreen text-xl">✳</span>
+      <!-- Duplicate for seamless infinite loop -->
+      <span>App Design</span>
+      <span class="text-brandGreen text-xl">✳</span>
+      <span>Website Design</span>
+      <span class="text-brandGreen text-xl">✳</span>
+      <span>Dashboard & SaaS</span>
+      <span class="text-brandGreen text-xl">✳</span>
+      <span>Wireframing</span>
+      <span class="text-brandGreen text-xl">✳</span>
+      <span>UI/UX Research</span>
+      <span class="text-brandGreen text-xl">✳</span>
+      <span>Prototyping</span>
+      <span class="text-brandGreen text-xl">✳</span>
+      <span>Design Systems</span>
+      <span class="text-brandGreen text-xl">✳</span>
+      <span>Gemini AI Integration</span>
+      <span class="text-brandGreen text-xl">✳</span>
+      <span>User Journey Mapping</span>
+      <span class="text-brandGreen text-xl">✳</span>
+    </div>
+  </section>
+
+  <!-- ========================
+       SERVICES SECTION 
+       ======================== -->
+  <section id="services" class="py-20 md:py-28 max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
+    
+    <!-- Section Header -->
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-6">
+      <div class="space-y-2">
+        <span class="text-sm font-bold tracking-widest text-brandYellow uppercase flex items-center gap-2">
+          <span class="w-5 h-0.5 bg-brandYellow"></span> Services
+        </span>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight">
+          Services <span class="text-brandYellow">I Provide</span>
+        </h2>
+      </div>
+      <a href="#projects" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-brandGreen text-white text-xs sm:text-sm font-semibold hover:bg-brandYellow hover:text-brandGreen-dark transition-all duration-300 w-fit">
+        <span>View All Services</span>
+        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+      </a>
+    </div>
+
+    <!-- Services Grid (6 Cards) -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- Card 1: UI/UX Design -->
+      <div class="service-card bg-white rounded-3xl p-8 border border-gray-100 shadow-sm flex flex-col justify-between group">
+        <div>
+          <div class="w-14 h-14 rounded-2xl bg-amber-50 text-brandYellow flex items-center justify-center mb-6 group-hover:bg-brandYellow group-hover:text-brandGreen transition-colors">
+            <i data-lucide="layout-template" class="w-7 h-7"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-brandGreen transition-colors">UI/UX Design</h3>
+          <p class="text-sm text-gray-600 leading-relaxed">
+            Crafting beautiful, user-centered digital interfaces. Complete wireframing, high-fidelity prototypes, user research, and comprehensive design tokens in Figma.
+          </p>
+        </div>
+        <div class="pt-6 mt-6 border-t border-gray-100 flex items-center justify-between">
+          <a href="#contact" class="text-xs font-bold text-brandGreen group-hover:text-brandYellow flex items-center gap-1.5 transition-colors">
+            <span>Learn more</span>
+            <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+          </a>
+          <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-gray-100 text-gray-600">Web & Mobile</span>
+        </div>
+      </div>
+
+      <!-- Card 2: Application Design -->
+      <div class="service-card bg-white rounded-3xl p-8 border border-gray-100 shadow-sm flex flex-col justify-between group">
+        <div>
+          <div class="w-14 h-14 rounded-2xl bg-emerald-50 text-brandGreen flex items-center justify-center mb-6 group-hover:bg-brandGreen group-hover:text-brandYellow transition-colors">
+            <i data-lucide="smartphone" class="w-7 h-7"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-brandGreen transition-colors">Application Design</h3>
+          <p class="text-sm text-gray-600 leading-relaxed">
+            End-to-end iOS & Android mobile application designs. Micro-interactions, intuitive touch navigation, responsive fluid layouts, and developer-ready design assets.
+          </p>
+        </div>
+        <div class="pt-6 mt-6 border-t border-gray-100 flex items-center justify-between">
+          <a href="#contact" class="text-xs font-bold text-brandGreen group-hover:text-brandYellow flex items-center gap-1.5 transition-colors">
+            <span>Learn more</span>
+            <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+          </a>
+          <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-gray-100 text-gray-600">iOS / Android</span>
+        </div>
+      </div>
+
+      <!-- Card 3: Website & Landing Design -->
+      <div class="service-card bg-white rounded-3xl p-8 border border-gray-100 shadow-sm flex flex-col justify-between group">
+        <div>
+          <div class="w-14 h-14 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+            <i data-lucide="monitor" class="w-7 h-7"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-brandGreen transition-colors">Website Design</h3>
+          <p class="text-sm text-gray-600 leading-relaxed">
+            Modern, conversion-focused websites and high-impact landing pages. Pixel-perfect typography, harmonious color theory, and responsive layouts for all viewports.
+          </p>
+        </div>
+        <div class="pt-6 mt-6 border-t border-gray-100 flex items-center justify-between">
+          <a href="#contact" class="text-xs font-bold text-brandGreen group-hover:text-brandYellow flex items-center gap-1.5 transition-colors">
+            <span>Learn more</span>
+            <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+          </a>
+          <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-gray-100 text-gray-600">Responsive Web</span>
+        </div>
+      </div>
+
+      <!-- Card 4: Dashboard & SaaS Design -->
+      <div class="service-card bg-white rounded-3xl p-8 border border-gray-100 shadow-sm flex flex-col justify-between group">
+        <div>
+          <div class="w-14 h-14 rounded-2xl bg-purple-50 text-purple-600 flex items-center justify-center mb-6 group-hover:bg-purple-600 group-hover:text-white transition-colors">
+            <i data-lucide="bar-chart-3" class="w-7 h-7"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-brandGreen transition-colors">Dashboard & SaaS Design</h3>
+          <p class="text-sm text-gray-600 leading-relaxed">
+            Simplifying dense data workflows. Analytical dashboards, admin panels, complex table structures, and modular KPI visualizations for enterprise applications.
+          </p>
+        </div>
+        <div class="pt-6 mt-6 border-t border-gray-100 flex items-center justify-between">
+          <a href="#contact" class="text-xs font-bold text-brandGreen group-hover:text-brandYellow flex items-center gap-1.5 transition-colors">
+            <span>Learn more</span>
+            <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+          </a>
+          <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-gray-100 text-gray-600">Enterprise SaaS</span>
+        </div>
+      </div>
+
+      <!-- Card 5: Gemini AI Interface Experience -->
+      <div class="service-card bg-white rounded-3xl p-8 border border-gray-100 shadow-sm flex flex-col justify-between group">
+        <div>
+          <div class="w-14 h-14 rounded-2xl bg-amber-100 text-amber-700 flex items-center justify-center mb-6 group-hover:bg-brandYellow group-hover:text-brandGreen transition-colors">
+            <i data-lucide="sparkles" class="w-7 h-7"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-brandGreen transition-colors">Gemini AI Experiences</h3>
+          <p class="text-sm text-gray-600 leading-relaxed">
+            Designing cutting-edge conversational AI interfaces, smart generative prompt flows, AI assistant copilots, and intelligent human-in-the-loop UX patterns.
+          </p>
+        </div>
+        <div class="pt-6 mt-6 border-t border-gray-100 flex items-center justify-between">
+          <a href="#ai-assistant" class="text-xs font-bold text-brandGreen group-hover:text-brandYellow flex items-center gap-1.5 transition-colors">
+            <span>Try AI Twin</span>
+            <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+          </a>
+          <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-amber-50 text-amber-700">Next-Gen AI</span>
+        </div>
+      </div>
+
+      <!-- Card 6: Design Systems & Prototyping -->
+      <div class="service-card bg-white rounded-3xl p-8 border border-gray-100 shadow-sm flex flex-col justify-between group">
+        <div>
+          <div class="w-14 h-14 rounded-2xl bg-rose-50 text-rose-600 flex items-center justify-center mb-6 group-hover:bg-rose-600 group-hover:text-white transition-colors">
+            <i data-lucide="component" class="w-7 h-7"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-brandGreen transition-colors">Design Systems & Specs</h3>
+          <p class="text-sm text-gray-600 leading-relaxed">
+            Scalable Figma component libraries, auto-layout architecture, design tokens, interactive micro-prototypes, and comprehensive documentation for engineering teams.
+          </p>
+        </div>
+        <div class="pt-6 mt-6 border-t border-gray-100 flex items-center justify-between">
+          <a href="#contact" class="text-xs font-bold text-brandGreen group-hover:text-brandYellow flex items-center gap-1.5 transition-colors">
+            <span>Learn more</span>
+            <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+          </a>
+          <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-gray-100 text-gray-600">Design Tokens</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================
+       ABOUT ME SECTION (Forest Green)
+       ======================== -->
+  <section id="about" class="bg-brandGreen text-white py-20 md:py-28 relative overflow-hidden">
+    
+    <!-- Background subtle radial decorative gradient -->
+    <div class="absolute -top-32 -left-32 w-96 h-96 bg-brandYellow/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-32 -right-32 w-96 h-96 bg-white/5 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        
+        <!-- Left Image with Sunburst & Floating Skill Pills (5 Cols) -->
+        <div class="lg:col-span-5 flex justify-center">
+          <div class="relative w-72 sm:w-80 md:w-96 h-72 sm:h-80 md:h-96 flex items-center justify-center">
+            
+            <!-- Golden Sunburst Circle Backdrop -->
+            <div class="absolute inset-0 bg-brandYellow rounded-full shadow-2xl"></div>
+
+            <!-- Profile Circular Image -->
+            <div class="relative z-10 w-64 sm:w-72 md:w-84 h-64 sm:h-72 md:h-84 rounded-full overflow-hidden border-4 border-brandGreen-dark shadow-xl">
+              <img 
+                src="assets/images/myesha-avatar.jpg" 
+                alt="Myesha Farjana Oishi" 
+                class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500"
+                loading="lazy"
+              >
+            </div>
+
+            <!-- Floating Skill Pill 1: UX/UI Design (Top Left) -->
+            <div class="absolute -top-2 left-4 z-20 px-3 py-1 rounded-full bg-brandYellow text-brandGreen-dark font-extrabold text-xs shadow-lg animate-float">
+              UX/UI Design
+            </div>
+
+            <!-- Floating Skill Pill 2: Mobile App Design (Left) -->
+            <div class="absolute top-20 -left-6 z-20 px-3 py-1 rounded-full bg-brandGreen-dark text-white border border-white/20 font-bold text-xs shadow-lg animate-float-alt">
+              Mobile App Design
+            </div>
+
+            <!-- Floating Skill Pill 3: Website Design (Bottom Left) -->
+            <div class="absolute bottom-12 -left-4 z-20 px-3 py-1 rounded-full bg-brandYellow text-brandGreen-dark font-extrabold text-xs shadow-lg animate-float">
+              Website Design
+            </div>
+
+            <!-- Floating Skill Pill 4: Design System (Top Right) -->
+            <div class="absolute top-4 -right-4 z-20 px-3 py-1 rounded-full bg-white text-brandGreen font-bold text-xs shadow-lg animate-float-alt">
+              Design System
+            </div>
+
+            <!-- Floating Skill Pill 5: Prototype (Right) -->
+            <div class="absolute top-28 -right-8 z-20 px-3 py-1 rounded-full bg-brandGreen-dark text-brandYellow border border-brandYellow/30 font-bold text-xs shadow-lg animate-float">
+              Prototype
+            </div>
+
+            <!-- Floating Skill Pill 6: Dashboard (Bottom Right) -->
+            <div class="absolute bottom-14 -right-4 z-20 px-3 py-1 rounded-full bg-brandYellow text-brandGreen-dark font-extrabold text-xs shadow-lg animate-float-alt">
+              Dashboard
+            </div>
+
+            <!-- Floating Skill Pill 7: Gemini AI (Bottom Center) -->
+            <div class="absolute -bottom-3 inset-x-0 mx-auto w-fit z-20 px-4 py-1.5 rounded-full bg-brandGreen-dark text-white border border-brandYellow font-bold text-xs shadow-xl flex items-center gap-1.5">
+              <i data-lucide="sparkles" class="w-3.5 h-3.5 text-brandYellow"></i>
+              <span>Gemini AI UX</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right Content & Bio (7 Cols) -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          
+          <!-- Tag -->
+          <span class="text-sm font-bold tracking-widest text-brandYellow uppercase flex items-center justify-center lg:justify-start gap-2">
+            <span class="w-5 h-0.5 bg-brandYellow"></span> About Me
+          </span>
+
+          <!-- Title -->
+          <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight">
+            Who is <span class="text-brandYellow">Myesha Farjana Oishi?</span>
+          </h2>
+
+          <!-- Narrative Bio -->
+          <div class="space-y-4 text-white/80 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto lg:mx-0">
+            <p>
+              I am a dedicated UI/UX Designer and creative problem-solver based in <strong class="text-white">Rajpara, Rajshahi, Bangladesh</strong>. My passion lies at the intersection of aesthetic design, human psychology, and modern technology.
+            </p>
+            <p>
+              With extensive hands-on experience in Figma, design systems, interactive prototypes, and AI-driven interfaces, I transform complex business challenges into seamless, delightful digital products. I believe that good design is not just how it looks, but how effortlessly it works.
+            </p>
+          </div>
+
+          <!-- Stats Counters -->
+          <div class="grid grid-cols-3 gap-4 pt-4 pb-2 border-y border-white/10 max-w-xl mx-auto lg:mx-0 text-center">
+            <div>
+              <div class="text-3xl sm:text-4xl font-extrabold text-brandYellow">60+</div>
+              <div class="text-xs text-white/70 mt-1 uppercase tracking-wider">Projects Completed</div>
+            </div>
+            <div>
+              <div class="text-3xl sm:text-4xl font-extrabold text-brandYellow">50+</div>
+              <div class="text-xs text-white/70 mt-1 uppercase tracking-wider">Satisfied Clients</div>
+            </div>
+            <div>
+              <div class="text-3xl sm:text-4xl font-extrabold text-brandYellow">3+</div>
+              <div class="text-xs text-white/70 mt-1 uppercase tracking-wider">Years Experience</div>
+            </div>
+          </div>
+
+          <!-- CTA and Signature -->
+          <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6">
+            <button id="download-cv-btn" class="inline-flex items-center gap-3 px-7 py-3.5 rounded-full bg-brandYellow text-brandGreen-dark font-extrabold text-sm shadow-xl hover:bg-white hover:text-brandGreen transition-all duration-300 hover:scale-105">
+              <span>Download CV</span>
+              <span class="w-6 h-6 rounded-full bg-brandGreen text-brandYellow flex items-center justify-center">
+                <i data-lucide="arrow-down" class="w-3.5 h-3.5"></i>
+              </span>
+            </button>
+
+            <!-- Handwritten Signature -->
+            <div class="flex items-center gap-2">
+              <span class="font-signature text-3xl sm:text-4xl text-brandYellow tracking-wider">
+                Myesha Farjana
+              </span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================
+       FAVORITE TOOLS SECTION 
+       ======================== -->
+  <section id="tools" class="py-20 max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
+    <div class="text-center max-w-2xl mx-auto mb-14 space-y-2">
+      <span class="text-sm font-bold tracking-widest text-brandYellow uppercase flex items-center justify-center gap-2">
+        <span class="w-5 h-0.5 bg-brandYellow"></span> My Favorite Tools
+      </span>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight">
+        Tools <span class="text-brandYellow">I Work With</span>
+      </h2>
+      <p class="text-sm text-gray-600">
+        Industry-standard software and modern AI tools that power my creative and design workflows.
+      </p>
+    </div>
+
+    <!-- Tools Grid -->
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+      
+      <!-- Tool 1: Figma -->
+      <div class="bg-white p-6 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all text-center group">
+        <div class="w-14 h-14 mx-auto mb-4 rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center group-hover:scale-110 transition-transform">
+          <i data-lucide="figma" class="w-8 h-8"></i>
+        </div>
+        <h4 class="font-bold text-gray-900 text-base">Figma</h4>
+        <p class="text-xs text-gray-500 mt-1">UI/UX & Prototyping</p>
+        <span class="inline-block mt-3 px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 text-[11px] font-semibold">98% Advanced</span>
+      </div>
+
+      <!-- Tool 2: Adobe XD -->
+      <div class="bg-white p-6 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all text-center group">
+        <div class="w-14 h-14 mx-auto mb-4 rounded-2xl bg-purple-50 text-purple-600 flex items-center justify-center group-hover:scale-110 transition-transform">
+          <i data-lucide="pen-tool" class="w-8 h-8"></i>
+        </div>
+        <h4 class="font-bold text-gray-900 text-base">Adobe XD</h4>
+        <p class="text-xs text-gray-500 mt-1">Wireframing & Flows</p>
+        <span class="inline-block mt-3 px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 text-[11px] font-semibold">92% Proficient</span>
+      </div>
+
+      <!-- Tool 3: Adobe Illustrator -->
+      <div class="bg-white p-6 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all text-center group">
+        <div class="w-14 h-14 mx-auto mb-4 rounded-2xl bg-orange-50 text-orange-600 flex items-center justify-center group-hover:scale-110 transition-transform">
+          <i data-lucide="shapes" class="w-8 h-8"></i>
+        </div>
+        <h4 class="font-bold text-gray-900 text-base">Illustrator</h4>
+        <p class="text-xs text-gray-500 mt-1">Vector & Iconography</p>
+        <span class="inline-block mt-3 px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 text-[11px] font-semibold">90% Proficient</span>
+      </div>
+
+      <!-- Tool 4: Adobe Photoshop -->
+      <div class="bg-white p-6 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all text-center group">
+        <div class="w-14 h-14 mx-auto mb-4 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center group-hover:scale-110 transition-transform">
+          <i data-lucide="image" class="w-8 h-8"></i>
+        </div>
+        <h4 class="font-bold text-gray-900 text-base">Photoshop</h4>
+        <p class="text-xs text-gray-500 mt-1">Image Retouching</p>
+        <span class="inline-block mt-3 px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 text-[11px] font-semibold">88% Proficient</span>
+      </div>
+
+      <!-- Tool 5: Gemini AI -->
+      <div class="bg-white p-6 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all text-center group">
+        <div class="w-14 h-14 mx-auto mb-4 rounded-2xl bg-yellow-50 text-brandYellow flex items-center justify-center group-hover:scale-110 transition-transform">
+          <i data-lucide="sparkles" class="w-8 h-8"></i>
+        </div>
+        <h4 class="font-bold text-gray-900 text-base">Gemini AI</h4>
+        <p class="text-xs text-gray-500 mt-1">AI Prompt & UX Flow</p>
+        <span class="inline-block mt-3 px-2 py-0.5 rounded-full bg-amber-50 text-amber-700 text-[11px] font-semibold">95% Expert</span>
+      </div>
+
+      <!-- Tool 6: Tailwind CSS / HTML5 -->
+      <div class="bg-white p-6 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all text-center group">
+        <div class="w-14 h-14 mx-auto mb-4 rounded-2xl bg-cyan-50 text-cyan-600 flex items-center justify-center group-hover:scale-110 transition-transform">
+          <i data-lucide="code" class="w-8 h-8"></i>
+        </div>
+        <h4 class="font-bold text-gray-900 text-base">HTML & CSS</h4>
+        <p class="text-xs text-gray-500 mt-1">Frontend Design Specs</p>
+        <span class="inline-block mt-3 px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 text-[11px] font-semibold">85% Proficient</span>
+      </div>
+
+      <!-- Tool 7: Framer -->
+      <div class="bg-white p-6 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all text-center group">
+        <div class="w-14 h-14 mx-auto mb-4 rounded-2xl bg-indigo-50 text-indigo-600 flex items-center justify-center group-hover:scale-110 transition-transform">
+          <i data-lucide="framer" class="w-8 h-8"></i>
+        </div>
+        <h4 class="font-bold text-gray-900 text-base">Framer</h4>
+        <p class="text-xs text-gray-500 mt-1">Interactive Web UI</p>
+        <span class="inline-block mt-3 px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 text-[11px] font-semibold">88% Proficient</span>
+      </div>
+
+      <!-- Tool 8: GitHub & Vercel -->
+      <div class="bg-white p-6 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all text-center group">
+        <div class="w-14 h-14 mx-auto mb-4 rounded-2xl bg-gray-100 text-gray-900 flex items-center justify-center group-hover:scale-110 transition-transform">
+          <i data-lucide="github" class="w-8 h-8"></i>
+        </div>
+        <h4 class="font-bold text-gray-900 text-base">GitHub & Vercel</h4>
+        <p class="text-xs text-gray-500 mt-1">Version Control & Deploy</p>
+        <span class="inline-block mt-3 px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 text-[11px] font-semibold">85% Proficient</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================
+       FEATURED PROJECTS SHOWCASE 
+       ======================== -->
+  <section id="projects" class="py-20 md:py-28 bg-white border-t border-gray-100">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+        <div class="space-y-2">
+          <span class="text-sm font-bold tracking-widest text-brandYellow uppercase flex items-center gap-2">
+            <span class="w-5 h-0.5 bg-brandYellow"></span> Portfolio
+          </span>
+          <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight">
+            Recent <span class="text-brandYellow">Design Works</span>
+          </h2>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="flex flex-wrap items-center gap-2" id="portfolio-tabs">
+          <button data-filter="all" class="portfolio-tab active px-4 py-2 rounded-full text-xs font-semibold bg-brandGreen text-white transition-all">All Projects</button>
+          <button data-filter="mobile" class="portfolio-tab px-4 py-2 rounded-full text-xs font-semibold bg-gray-100 text-gray-700 hover:bg-gray-200 transition-all">Mobile Apps</button>
+          <button data-filter="web" class="portfolio-tab px-4 py-2 rounded-full text-xs font-semibold bg-gray-100 text-gray-700 hover:bg-gray-200 transition-all">Web Design</button>
+          <button data-filter="dashboard" class="portfolio-tab px-4 py-2 rounded-full text-xs font-semibold bg-gray-100 text-gray-700 hover:bg-gray-200 transition-all">SaaS & Dashboards</button>
+        </div>
+      </div>
+
+      <!-- Projects Grid (6 Projects) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects-grid">
+        
+        <!-- Project 1: FinFlow Mobile -->
+        <div class="project-item project-card bg-cream rounded-3xl overflow-hidden border border-gray-200 shadow-sm flex flex-col group" data-category="mobile">
+          <div class="relative overflow-hidden aspect-[16/10] bg-gray-900">
+            <img src="assets/projects/finflow.jpg" alt="FinFlow Mobile Banking App" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="project-overlay absolute inset-0 bg-brandGreen/80 opacity-0 transition-opacity duration-300 flex items-center justify-center p-4">
+              <button onclick="openProjectModal('finflow')" class="px-5 py-2.5 rounded-full bg-brandYellow text-brandGreen font-bold text-xs shadow-lg hover:scale-105 transition-transform flex items-center gap-2">
+                <span>View Case Study</span>
+                <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+              </button>
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between text-xs text-brandYellow font-bold uppercase tracking-wider mb-2">
+                <span>Fintech · Mobile UI</span>
+                <span class="text-gray-400">2026</span>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 group-hover:text-brandGreen transition-colors">FinFlow Mobile Banking</h3>
+              <p class="text-sm text-gray-600 mt-2 line-clamp-2">
+                A seamless financial app for instant peer-to-peer payments, biometric security, and visual spending analytics.
+              </p>
+            </div>
+            <div class="pt-4 mt-4 border-t border-gray-200/60 flex items-center gap-2">
+              <span class="text-[11px] font-medium px-2.5 py-1 rounded-full bg-white text-gray-700 border">Figma</span>
+              <span class="text-[11px] font-medium px-2.5 py-1 rounded-full bg-white text-gray-700 border">iOS/Android</span>
+              <span class="text-[11px] font-medium px-2.5 py-1 rounded-full bg-white text-gray-700 border">Design System</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Aura Healthcare -->
+        <div class="project-item project-card bg-cream rounded-3xl overflow-hidden border border-gray-200 shadow-sm flex flex-col group" data-category="dashboard">
+          <div class="relative overflow-hidden aspect-[16/10] bg-gray-900">
+            <img src="assets/projects/aura-health.jpg" alt="Aura Healthcare Telemedicine" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="project-overlay absolute inset-0 bg-brandGreen/80 opacity-0 transition-opacity duration-300 flex items-center justify-center p-4">
+              <button onclick="openProjectModal('aura')" class="px-5 py-2.5 rounded-full bg-brandYellow text-brandGreen font-bold text-xs shadow-lg hover:scale-105 transition-transform flex items-center gap-2">
+                <span>View Case Study</span>
+                <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+              </button>
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between text-xs text-brandYellow font-bold uppercase tracking-wider mb-2">
+                <span>HealthTech · Dashboard</span>
+                <span class="text-gray-400">2026</span>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 group-hover:text-brandGreen transition-colors">Aura Telehealth Portal</h3>
+              <p class="text-sm text-gray-600 mt-2 line-clamp-2">
+                Patient consultation portal with real-time vitals monitoring, appointment bookings, and encrypted doctor chats.
+              </p>
+            </div>
+            <div class="pt-4 mt-4 border-t border-gray-200/60 flex items-center gap-2">
+              <span class="text-[11px] font-medium px-2.5 py-1 rounded-full bg-white text-gray-700 border">Figma</span>
+              <span class="text-[11px] font-medium px-2.5 py-1 rounded-full bg-white text-gray-700 border">Telehealth</span>
+              <span class="text-[11px] font-medium px-2.5 py-1 rounded-full bg-white text-gray-700 border">Dashboard</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Nexus AI Studio -->
+        <div class="project-item project-card bg-cream rounded-3xl overflow-hidden border border-gray-200 shadow-sm flex flex-col group" data-category="web">
+          <div class="relative overflow-hidden aspect-[16/10] bg-gray-900">
+            <img src="assets/projects/nexus-ai.jpg" alt="Nexus Gemini AI Studio" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="project-overlay absolute inset-0 bg-brandGreen/80 opacity-0 transition-opacity duration-300 flex items-center justify-center p-4">
+              <button onclick="openProjectModal('nexus')" class="px-5 py-2.5 rounded-full bg-brandYellow text-brandGreen font-bold text-xs shadow-lg hover:scale-105 transition-transform flex items-center gap-2">
+                <span>View Case Study</span>
+                <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+              </button>
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between text-xs text-brandYellow font-bold uppercase tracking-wider mb-2">
+                <span>AI Interface · SaaS</span>
+                <span class="text-gray-400">2026</span>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 group-hover:text-brandGreen transition-colors">Nexus Gemini AI Studio</h3>
+              <p class="text-sm text-gray-600 mt-2 line-clamp-2">
+                A prompt engineering workspace and multimodal canvas interface empowering teams to collaborate with Gemini AI.
+              </p>
+            </div>
+            <div class="pt-4 mt-4 border-t border-gray-200/60 flex items-center gap-2">
+              <span class="text-[11px] font-medium px-2.5 py-1 rounded-full bg-white text-gray-700 border">Gemini AI</span>
+              <span class="text-[11px] font-medium px-2.5 py-1 rounded-full bg-white text-gray-700 border">Canvas UI</span>
+              <span class="text-[11px] font-medium px-2.5 py-1 rounded-full bg-white text-gray-700 border">SaaS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Zenith Creative Agency -->
+        <div class="project-item project-card bg-cream rounded-3xl overflow-hidden border border-gray-200 shadow-sm flex flex-col group" data-category="web">
+          <div class="relative overflow-hidden aspect-[16/10] bg-gray-900">
+            <img src="assets/projects/zenith-agency.jpg" alt="Zenith Creative Agency" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="project-overlay absolute inset-0 bg-brandGreen/80 opacity-0 transition-opacity duration-300 flex items-center justify-center p-4">
+              <button onclick="openProjectModal('zenith')" class="px-5 py-2.5 rounded-full bg-brandYellow text-brandGreen font-bold text-xs shadow-lg hover:scale-105 transition-transform flex items-center gap-2">
+                <span>View Case Study</span>
+                <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+              </button>
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between text-xs text-brandYellow font-bold uppercase tracking-wider mb-2">
+                <span>Web Design · Branding</span>
+                <span class="text-gray-400">2026</span>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 group-hover:text-brandGreen transition-colors">Zenith Digital Agency</h3>
+              <p class="text-sm text-gray-600 mt-2 line-clamp-2">
+                Award-worthy website design with fluid typographic hierarchy, interactive portfolio showcases, and lead generation funnels.
+              </p>
+            </div>
+            <div class="pt-4 mt-4 border-t border-gray-200/60 flex items-center gap-2">
+              <span class="text-[11px] font-medium px-2.5 py-1 rounded-full bg-white text-gray-700 border">Web Design</span>
+              <span class="text-[11px] font-medium px-2.5 py-1 rounded-full bg-white text-gray-700 border">Tailwind</span>
+              <span class="text-[11px] font-medium px-2.5 py-1 rounded-full bg-white text-gray-700 border">Branding</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: CloudPulse Analytics -->
+        <div class="project-item project-card bg-cream rounded-3xl overflow-hidden border border-gray-200 shadow-sm flex flex-col group" data-category="dashboard">
+          <div class="relative overflow-hidden aspect-[16/10] bg-gray-900">
+            <img src="assets/projects/cloudpulse.jpg" alt="CloudPulse Analytics Dashboard" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="project-overlay absolute inset-0 bg-brandGreen/80 opacity-0 transition-opacity duration-300 flex items-center justify-center p-4">
+              <button onclick="openProjectModal('cloudpulse')" class="px-5 py-2.5 rounded-full bg-brandYellow text-brandGreen font-bold text-xs shadow-lg hover:scale-105 transition-transform flex items-center gap-2">
+                <span>View Case Study</span>
+                <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+              </button>
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between text-xs text-brandYellow font-bold uppercase tracking-wider mb-2">
+                <span>Cloud B2B · Dashboard</span>
+                <span class="text-gray-400">2026</span>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 group-hover:text-brandGreen transition-colors">CloudPulse Infrastructure</h3>
+              <p class="text-sm text-gray-600 mt-2 line-clamp-2">
+                Server telemetry and observability UI with live latency telemetry, cluster status indicators, and alert thresholds.
+              </p>
+            </div>
+            <div class="pt-4 mt-4 border-t border-gray-200/60 flex items-center gap-2">
+              <span class="text-[11px] font-medium px-2.5 py-1 rounded-full bg-white text-gray-700 border">Figma</span>
+              <span class="text-[11px] font-medium px-2.5 py-1 rounded-full bg-white text-gray-700 border">Data Viz</span>
+              <span class="text-[11px] font-medium px-2.5 py-1 rounded-full bg-white text-gray-700 border">B2B SaaS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6: Saffron Bites Mobile App -->
+        <div class="project-item project-card bg-cream rounded-3xl overflow-hidden border border-gray-200 shadow-sm flex flex-col group" data-category="mobile">
+          <div class="relative overflow-hidden aspect-[16/10] bg-gray-900">
+            <img src="assets/projects/saffron-bites.jpg" alt="Saffron Bites Food Delivery" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="project-overlay absolute inset-0 bg-brandGreen/80 opacity-0 transition-opacity duration-300 flex items-center justify-center p-4">
+              <button onclick="openProjectModal('saffron')" class="px-5 py-2.5 rounded-full bg-brandYellow text-brandGreen font-bold text-xs shadow-lg hover:scale-105 transition-transform flex items-center gap-2">
+                <span>View Case Study</span>
+                <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+              </button>
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between text-xs text-brandYellow font-bold uppercase tracking-wider mb-2">
+                <span>FoodTech · Mobile App</span>
+                <span class="text-gray-400">2026</span>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 group-hover:text-brandGreen transition-colors">Saffron Bites Food Delivery</h3>
+              <p class="text-sm text-gray-600 mt-2 line-clamp-2">
+                On-demand food ordering experience featuring custom dish customizers, live rider tracking, and checkout flows.
+              </p>
+            </div>
+            <div class="pt-4 mt-4 border-t border-gray-200/60 flex items-center gap-2">
+              <span class="text-[11px] font-medium px-2.5 py-1 rounded-full bg-white text-gray-700 border">Mobile UI</span>
+              <span class="text-[11px] font-medium px-2.5 py-1 rounded-full bg-white text-gray-700 border">Interaction</span>
+              <span class="text-[11px] font-medium px-2.5 py-1 rounded-full bg-white text-gray-700 border">Figma</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================
+       INTERACTIVE GEMINI AI ASSISTANT ("Ask Myesha AI")
+       ======================== -->
+  <section id="ai-assistant" class="py-20 md:py-24 bg-gradient-to-b from-brandGreen-dark to-brandGreen text-white relative">
+    <div class="max-w-4xl mx-auto px-5 sm:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center space-y-3 mb-10">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brandYellow/20 border border-brandYellow/40 text-brandYellow text-xs font-bold uppercase tracking-wider">
+          <i data-lucide="sparkles" class="w-3.5 h-3.5 animate-spin-slow"></i>
+          Powered by Gemini AI
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">
+          Chat with <span class="text-brandYellow">Myesha's AI Twin</span>
+        </h2>
+        <p class="text-white/70 text-sm sm:text-base max-w-lg mx-auto">
+          Want to know about Myesha's design philosophy, rates, availability, or experience? Ask the AI assistant directly!
+        </p>
+      </div>
+
+      <!-- AI Chat Container Box -->
+      <div class="bg-brandGreen-surface/90 rounded-3xl border border-white/10 shadow-2xl overflow-hidden flex flex-col h-[520px]">
+        
+        <!-- Chat Header -->
+        <div class="px-6 py-4 bg-black/20 border-b border-white/10 flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <div class="relative">
+              <img src="assets/images/myesha-avatar.jpg" alt="Myesha AI" class="w-10 h-10 rounded-full object-cover border-2 border-brandYellow">
+              <span class="absolute bottom-0 right-0 w-3 h-3 rounded-full bg-emerald-500 border-2 border-brandGreen-surface"></span>
+            </div>
+            <div>
+              <h4 class="font-bold text-sm text-white flex items-center gap-1.5">
+                Myesha AI Twin <i data-lucide="sparkles" class="w-3.5 h-3.5 text-brandYellow"></i>
+              </h4>
+              <p class="text-[11px] text-white/60">Gemini-powered creative assistant · Online</p>
+            </div>
+          </div>
+          <span class="text-xs px-2.5 py-1 rounded-full bg-brandYellow/10 text-brandYellow font-mono">v2.5 Flash</span>
+        </div>
+
+        <!-- Chat Message History -->
+        <div id="ai-chat-messages" class="flex-1 p-6 overflow-y-auto space-y-4">
+          <!-- Bot Welcome Message -->
+          <div class="flex items-start gap-3">
+            <div class="w-8 h-8 rounded-full bg-brandYellow text-brandGreen font-bold flex items-center justify-center text-xs shrink-0 mt-0.5">
+              M
+            </div>
+            <div class="bg-white/10 rounded-2xl rounded-tl-none p-4 text-sm text-white/90 max-w-[85%] leading-relaxed border border-white/5">
+              Hello! 👋 I'm <strong>Myesha Farjana Oishi's AI Twin</strong>, powered by Gemini. Ask me anything about Myesha's UI/UX background, design services, past projects, or how to collaborate with her!
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Question Chips -->
+        <div class="px-6 py-2 bg-black/10 border-t border-white/5 flex items-center gap-2 overflow-x-auto text-xs whitespace-nowrap scrollbar-none" id="ai-quick-chips">
+          <button onclick="sendQuickPrompt('What are Myesha\'s primary design skills?')" class="px-3 py-1 rounded-full bg-white/10 hover:bg-brandYellow hover:text-brandGreen text-white/80 transition-colors">
+            ✨ Design skills?
+          </button>
+          <button onclick="sendQuickPrompt('Is Myesha available for freelance work?')" class="px-3 py-1 rounded-full bg-white/10 hover:bg-brandYellow hover:text-brandGreen text-white/80 transition-colors">
+            💼 Freelance availability?
+          </button>
+          <button onclick="sendQuickPrompt('How can I contact or hire Myesha?')" class="px-3 py-1 rounded-full bg-white/10 hover:bg-brandYellow hover:text-brandGreen text-white/80 transition-colors">
+            📞 Contact details?
+          </button>
+          <button onclick="sendQuickPrompt('Where is Myesha located?')" class="px-3 py-1 rounded-full bg-white/10 hover:bg-brandYellow hover:text-brandGreen text-white/80 transition-colors">
+            📍 Location?
+          </button>
+        </div>
+
+        <!-- Chat Input Form -->
+        <form id="ai-chat-form" class="p-4 bg-black/30 border-t border-white/10 flex items-center gap-3">
+          <input 
+            type="text" 
+            id="ai-user-input" 
+            placeholder="Ask Myesha's AI anything (e.g., 'What tools do you use?')..." 
+            class="flex-1 bg-white/10 border border-white/15 rounded-full px-5 py-3 text-sm text-white placeholder-white/40 focus:outline-none focus:border-brandYellow transition-colors"
+            required
+            autocomplete="off"
+          >
+          <button type="submit" class="w-11 h-11 rounded-full bg-brandYellow text-brandGreen-dark font-bold flex items-center justify-center hover:bg-white hover:text-brandGreen transition-all hover:scale-105 shrink-0">
+            <i data-lucide="send" class="w-4 h-4"></i>
+          </button>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================
+       TESTIMONIALS SECTION 
+       ======================== -->
+  <section class="py-20 max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
+    <div class="text-center max-w-2xl mx-auto mb-14 space-y-2">
+      <span class="text-sm font-bold tracking-widest text-brandYellow uppercase flex items-center justify-center gap-2">
+        <span class="w-5 h-0.5 bg-brandYellow"></span> Testimonials
+      </span>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight">
+        What People <span class="text-brandYellow">Say About Me</span>
+      </h2>
+      <p class="text-sm text-gray-600">
+        Feedback from founders, product managers, and engineering partners.
+      </p>
+    </div>
+
+    <!-- Testimonial Cards Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <!-- Review 1 -->
+      <div class="bg-white rounded-3xl p-8 border border-gray-100 shadow-sm flex flex-col justify-between">
+        <div class="space-y-4">
+          <div class="flex items-center gap-1 text-brandYellow">
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+          </div>
+          <p class="text-sm text-gray-700 leading-relaxed italic">
+            "Myesha is exceptionally talented in Figma and mobile app design. She redesigned our FinTech app onboarding, and our conversion rate jumped by 34% within the first month. Fast, meticulous, and communicative!"
+          </p>
+        </div>
+        <div class="pt-6 mt-6 border-t border-gray-100 flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-emerald-100 text-emerald-800 font-bold flex items-center justify-center text-sm">
+            AS
+          </div>
+          <div>
+            <h4 class="font-bold text-sm text-gray-900">Arifur Rahman</h4>
+            <p class="text-xs text-gray-500">Co-Founder, PayFlow</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 2 -->
+      <div class="bg-white rounded-3xl p-8 border border-gray-100 shadow-sm flex flex-col justify-between">
+        <div class="space-y-4">
+          <div class="flex items-center gap-1 text-brandYellow">
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+          </div>
+          <p class="text-sm text-gray-700 leading-relaxed italic">
+            "Working with Myesha on our SaaS dashboard was a fantastic experience. She organized complex clinical information into clean, intuitive UI components. Developer handoff was seamless."
+          </p>
+        </div>
+        <div class="pt-6 mt-6 border-t border-gray-100 flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-blue-100 text-blue-800 font-bold flex items-center justify-center text-sm">
+            EH
+          </div>
+          <div>
+            <h4 class="font-bold text-sm text-gray-900">Elena Harris</h4>
+            <p class="text-xs text-gray-500">Product Manager, HealthSphere</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 3 -->
+      <div class="bg-white rounded-3xl p-8 border border-gray-100 shadow-sm flex flex-col justify-between">
+        <div class="space-y-4">
+          <div class="flex items-center gap-1 text-brandYellow">
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+          </div>
+          <p class="text-sm text-gray-700 leading-relaxed italic">
+            "Her design sense is top notch. The color balance, typography, and micro-interactions gave our startup a world-class look. Highly recommended to anyone looking for a reliable UI/UX designer."
+          </p>
+        </div>
+        <div class="pt-6 mt-6 border-t border-gray-100 flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-amber-100 text-amber-800 font-bold flex items-center justify-center text-sm">
+            TK
+          </div>
+          <div>
+            <h4 class="font-bold text-sm text-gray-900">Tanvir Khan</h4>
+            <p class="text-xs text-gray-500">Managing Director, Zenith Digital</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================
+       CONTACT SECTION 
+       ======================== -->
+  <section id="contact" class="py-20 md:py-28 bg-brandGreen text-white relative overflow-hidden">
+    
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+        
+        <!-- Left Contact Info (5 Cols) -->
+        <div class="lg:col-span-5 space-y-8">
+          
+          <div class="space-y-3">
+            <span class="text-sm font-bold tracking-widest text-brandYellow uppercase flex items-center gap-2">
+              <span class="w-5 h-0.5 bg-brandYellow"></span> Contact Me
+            </span>
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight">
+              Let's Create Something <span class="text-brandYellow">Extraordinary</span>
+            </h2>
+            <p class="text-white/70 text-sm sm:text-base leading-relaxed">
+              Have a project in mind or need a dedicated UI/UX designer? Feel free to reach out via email, phone, or direct WhatsApp chat!
+            </p>
+          </div>
+
+          <!-- Contact Info Cards -->
+          <div class="space-y-4">
+            
+            <!-- Email -->
+            <a href="mailto:oishimyesha@gmail.com" class="p-4 rounded-2xl bg-white/5 border border-white/10 hover:border-brandYellow flex items-center gap-4 transition-colors group">
+              <div class="w-12 h-12 rounded-xl bg-brandYellow text-brandGreen flex items-center justify-center shrink-0">
+                <i data-lucide="mail" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <p class="text-xs text-white/60 uppercase font-semibold">Email Me</p>
+                <p class="text-sm sm:text-base font-bold text-white group-hover:text-brandYellow transition-colors">
+                  oishimyesha@gmail.com
+                </p>
+              </div>
+            </a>
+
+            <!-- Phone / WhatsApp -->
+            <a href="https://wa.me/8801327183767?text=Hello%20Myesha,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project!" target="_blank" rel="noopener noreferrer" class="p-4 rounded-2xl bg-white/5 border border-white/10 hover:border-brandYellow flex items-center gap-4 transition-colors group">
+              <div class="w-12 h-12 rounded-xl bg-emerald-500 text-white flex items-center justify-center shrink-0">
+                <i data-lucide="phone" class="w-6 h-6"></i>
+              </div>
+              <div class="flex-1">
+                <div class="flex items-center justify-between">
+                  <p class="text-xs text-white/60 uppercase font-semibold">Phone / WhatsApp</p>
+                  <span class="text-[10px] px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 font-bold">Quick Chat</span>
+                </div>
+                <p class="text-sm sm:text-base font-bold text-white group-hover:text-brandYellow transition-colors">
+                  01327183767
+                </p>
+              </div>
+            </a>
+
+            <!-- Location -->
+            <div class="p-4 rounded-2xl bg-white/5 border border-white/10 flex items-center gap-4">
+              <div class="w-12 h-12 rounded-xl bg-amber-500 text-white flex items-center justify-center shrink-0">
+                <i data-lucide="map-pin" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <p class="text-xs text-white/60 uppercase font-semibold">Location</p>
+                <p class="text-sm sm:text-base font-bold text-white">
+                  Rajpara, Rajshahi, Bangladesh
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Social Links -->
+          <div class="pt-4 flex items-center gap-3">
+            <a href="https://github.com/mfoishi5" target="_blank" rel="noopener noreferrer" class="w-11 h-11 rounded-full bg-white/10 text-white flex items-center justify-center hover:bg-brandYellow hover:text-brandGreen transition-all hover:scale-110" aria-label="GitHub">
+              <i data-lucide="github" class="w-5 h-5"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="w-11 h-11 rounded-full bg-white/10 text-white flex items-center justify-center hover:bg-brandYellow hover:text-brandGreen transition-all hover:scale-110" aria-label="LinkedIn">
+              <i data-lucide="linkedin" class="w-5 h-5"></i>
+            </a>
+            <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer" class="w-11 h-11 rounded-full bg-white/10 text-white flex items-center justify-center hover:bg-brandYellow hover:text-brandGreen transition-all hover:scale-110" aria-label="Dribbble">
+              <i data-lucide="dribbble" class="w-5 h-5"></i>
+            </a>
+            <a href="https://wa.me/8801327183767" target="_blank" rel="noopener noreferrer" class="w-11 h-11 rounded-full bg-emerald-500 text-white flex items-center justify-center hover:scale-110 transition-all" aria-label="WhatsApp">
+              <i data-lucide="message-circle" class="w-5 h-5"></i>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Right Contact Form (7 Cols) -->
+        <div class="lg:col-span-7 bg-white rounded-3xl p-8 sm:p-10 text-gray-900 shadow-2xl">
+          
+          <h3 class="text-2xl font-bold text-gray-900 mb-2">Send a Message</h3>
+          <p class="text-sm text-gray-600 mb-6">Fill in the details below and I'll reply within 24 hours.</p>
+
+          <form id="contact-form" class="space-y-5">
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              <div>
+                <label for="contact-name" class="block text-xs font-bold uppercase text-gray-700 mb-2">Your Name *</label>
+                <input 
+                  type="text" 
+                  id="contact-name" 
+                  name="name" 
+                  placeholder="e.g. John Doe" 
+                  class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-brandGreen focus:ring-2 focus:ring-brandGreen/10 text-sm"
+                  required
+                >
+              </div>
+              <div>
+                <label for="contact-email" class="block text-xs font-bold uppercase text-gray-700 mb-2">Your Email *</label>
+                <input 
+                  type="email" 
+                  id="contact-email" 
+                  name="email" 
+                  placeholder="john@example.com" 
+                  class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-brandGreen focus:ring-2 focus:ring-brandGreen/10 text-sm"
+                  required
+                >
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              <div>
+                <label for="contact-service" class="block text-xs font-bold uppercase text-gray-700 mb-2">Service Needed</label>
+                <select id="contact-service" name="service" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-brandGreen focus:ring-2 focus:ring-brandGreen/10 text-sm bg-white">
+                  <option value="UI/UX Design">UI/UX Design</option>
+                  <option value="Mobile App Design">Mobile App Design</option>
+                  <option value="Website Design">Website Design</option>
+                  <option value="Dashboard / SaaS">Dashboard / SaaS UI</option>
+                  <option value="Design System">Design System</option>
+                  <option value="Other">Other Collaboration</option>
+                </select>
+              </div>
+              <div>
+                <label for="contact-budget" class="block text-xs font-bold uppercase text-gray-700 mb-2">Expected Budget</label>
+                <select id="contact-budget" name="budget" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-brandGreen focus:ring-2 focus:ring-brandGreen/10 text-sm bg-white">
+                  <option value="$300 - $500">$300 - $500</option>
+                  <option value="$500 - $1,500">$500 - $1,500</option>
+                  <option value="$1,500 - $5,000">$1,500 - $5,000</option>
+                  <option value="$5,000+">$5,000+</option>
+                  <option value="Undecided">Discuss Later</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label for="contact-message" class="block text-xs font-bold uppercase text-gray-700 mb-2">Project Brief / Message *</label>
+              <textarea 
+                id="contact-message" 
+                name="message" 
+                rows="4" 
+                placeholder="Tell me about your project, goals, and timeline..." 
+                class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-brandGreen focus:ring-2 focus:ring-brandGreen/10 text-sm resize-none"
+                required
+              ></textarea>
+            </div>
+
+            <!-- Submit Buttons -->
+            <div class="flex flex-col sm:flex-row items-center gap-3 pt-2">
+              <button 
+                type="submit" 
+                class="w-full sm:flex-1 py-3.5 px-6 rounded-full bg-brandGreen text-white font-bold text-sm shadow-xl hover:bg-brandGreen-light transition-all duration-300 hover:scale-[1.02] flex items-center justify-center gap-2"
+              >
+                <span>Send Message</span>
+                <i data-lucide="send" class="w-4 h-4"></i>
+              </button>
+              
+              <a 
+                href="https://wa.me/8801327183767?text=Hello%20Myesha,%20I%20want%20to%20hire%20you%20for%20a%20design%20project!" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="w-full sm:w-auto py-3.5 px-6 rounded-full bg-emerald-600 text-white font-bold text-sm shadow-md hover:bg-emerald-700 transition-all flex items-center justify-center gap-2"
+              >
+                <i data-lucide="message-square" class="w-4 h-4"></i>
+                <span>Direct WhatsApp</span>
+              </a>
+            </div>
+
+            <!-- Feedback Message Container -->
+            <div id="contact-feedback" class="hidden p-4 rounded-xl text-sm font-medium"></div>
+
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================
+       FOOTER 
+       ======================== -->
+  <footer class="bg-brandGreen-dark text-white/70 py-12 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+      
+      <!-- Brand -->
+      <div class="flex items-center gap-2">
+        <span class="w-8 h-8 rounded-full bg-brandYellow flex items-center justify-center text-brandGreen font-extrabold text-sm">
+          O
+        </span>
+        <span class="text-white font-bold text-lg">Myesha Farjana Oishi<span class="text-brandYellow">.</span></span>
+      </div>
+
+      <!-- Quick Copyright Text -->
+      <p class="text-xs text-white/50">
+        © 2026 Myesha Farjana Oishi. All rights reserved. Designed with passion & Gemini AI.
+      </p>
+
+      <!-- Back to Top Button -->
+      <a href="#home" class="inline-flex items-center gap-2 text-xs font-semibold text-brandYellow hover:text-white transition-colors">
+        <span>Back to Top</span>
+        <i data-lucide="arrow-up" class="w-3.5 h-3.5"></i>
+      </a>
+
+    </div>
+  </footer>
+
+  <!-- ========================
+       CASE STUDY DETAIL MODAL 
+       ======================== -->
+  <dialog id="project-modal" class="rounded-3xl p-0 max-w-2xl w-full bg-white shadow-2xl border border-gray-100 overflow-hidden m-auto">
+    <div class="p-6 md:p-8 space-y-6">
+      
+      <div class="flex items-center justify-between border-b border-gray-100 pb-4">
+        <div>
+          <span id="modal-category" class="text-xs font-bold text-brandYellow uppercase tracking-wider"></span>
+          <h3 id="modal-title" class="text-2xl font-extrabold text-gray-900 mt-0.5"></h3>
+        </div>
+        <button onclick="closeProjectModal()" class="w-9 h-9 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-700 flex items-center justify-center">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <div class="rounded-2xl overflow-hidden aspect-[16/10] bg-gray-900">
+        <img id="modal-image" src="" alt="Project Image" class="w-full h-full object-cover">
+      </div>
+
+      <div class="space-y-3">
+        <h4 class="font-bold text-sm text-gray-900 uppercase tracking-wide">Project Overview</h4>
+        <p id="modal-desc" class="text-sm text-gray-600 leading-relaxed"></p>
+      </div>
+
+      <div class="space-y-2">
+        <h4 class="font-bold text-sm text-gray-900 uppercase tracking-wide">Core Contributions</h4>
+        <ul id="modal-contributions" class="text-sm text-gray-600 list-disc list-inside space-y-1"></ul>
+      </div>
+
+      <div class="pt-4 border-t border-gray-100 flex items-center justify-between">
+        <div id="modal-tags" class="flex flex-wrap gap-2"></div>
+        <a href="#contact" onclick="closeProjectModal()" class="px-5 py-2.5 rounded-full bg-brandGreen text-white text-xs font-bold hover:bg-brandYellow hover:text-brandGreen transition-colors">
+          Discuss Similar Project
+        </a>
+      </div>
+
+    </div>
+  </dialog>
+
+  <!-- ========================
+       CV MODAL / PREVIEW 
+       ======================== -->
+  <dialog id="cv-modal" class="rounded-3xl p-0 max-w-xl w-full bg-white shadow-2xl border border-gray-100 overflow-hidden m-auto">
+    <div class="p-6 md:p-8 space-y-6">
+      
+      <div class="flex items-center justify-between border-b border-gray-100 pb-4">
+        <div>
+          <span class="text-xs font-bold text-brandYellow uppercase tracking-wider">Curriculum Vitae</span>
+          <h3 class="text-xl font-extrabold text-gray-900 mt-0.5">Myesha Farjana Oishi</h3>
+          <p class="text-xs text-gray-500">UI/UX & Product Designer · Rajpara, Rajshahi</p>
+        </div>
+        <button onclick="document.getElementById('cv-modal').close()" class="w-9 h-9 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-700 flex items-center justify-center">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <div class="space-y-4 text-xs sm:text-sm text-gray-700">
+        <div>
+          <h4 class="font-bold text-brandGreen uppercase text-xs tracking-wider mb-1">Contact</h4>
+          <p>Email: oishimyesha@gmail.com | Phone: 01327183767</p>
+          <p>Location: Rajpara, Rajshahi, Bangladesh</p>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-brandGreen uppercase text-xs tracking-wider mb-1">Expertise</h4>
+          <p>UI/UX Design, iOS/Android App Design, Web Design, Figma, Design Systems, Wireframing, Gemini AI Prompts & UX, User Research.</p>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-brandGreen uppercase text-xs tracking-wider mb-1">Key Achievements</h4>
+          <ul class="list-disc list-inside space-y-1 text-gray-600">
+            <li>Designed 60+ mobile and web interface projects across fintech, telehealth, and SaaS.</li>
+            <li>Created comprehensive Figma design systems reducing frontend dev turnaround by 40%.</li>
+            <li>Collaborated with global startup teams to optimize user retention and onboarding.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-4 border-t border-gray-100 flex items-center justify-between">
+        <button onclick="window.print()" class="px-5 py-2.5 rounded-full border border-gray-300 text-gray-700 text-xs font-bold hover:bg-gray-100 transition-colors flex items-center gap-1.5">
+          <i data-lucide="printer" class="w-3.5 h-3.5"></i>
+          <span>Print / Save PDF</span>
+        </button>
+        <a href="mailto:oishimyesha@gmail.com?subject=Job%20Inquiry%20from%20Portfolio" class="px-5 py-2.5 rounded-full bg-brandYellow text-brandGreen font-bold text-xs hover:bg-brandGreen hover:text-white transition-colors">
+          Hire Myesha
+        </a>
+      </div>
+
+    </div>
+  </dialog>
+
+  <!-- Load Lucide Icons & Custom Script -->
+  <script src="script.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
